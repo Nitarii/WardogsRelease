@@ -1,1 +1,307 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090b08"><meta name="description" content="WARDOGS release countdown."><title>WARDOGS — Countdown</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><style>:root{--a:#d8ff55;--t:#eef2e7;--m:#9ca895;--l:rgba(220,235,200,.18);--ll:rgba(220,235,200,.34);--bg:#090b08}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--t);font-family:Inter,system-ui,sans-serif}body{overflow-x:hidden}a{color:inherit;text-decoration:none}.bg,.grid,.scan,.vig,.noise{position:fixed;inset:0}.bg{z-index:0;background:#11150f;overflow:hidden}.shot{position:absolute;inset:-2%;background-size:cover;background-position:center;opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 8s ease;filter:saturate(.82) contrast(1.06) brightness(.55)}.shot.on{opacity:1;transform:scale(1.01)}.bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,7,.97),rgba(8,10,7,.78) 35%,rgba(8,10,7,.38) 70%,rgba(8,10,7,.62)),linear-gradient(180deg,rgba(8,10,7,.10),rgba(8,10,7,.18) 48%,rgba(8,10,7,.97))}.grid{z-index:1;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(220,240,190,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(220,240,190,.08) 1px,transparent 1px);background-size:48px 48px}.scan{z-index:2;pointer-events:none;opacity:.1;background:repeating-linear-gradient(180deg,transparent 0 3px,rgba(0,0,0,.2) 4px)}.vig{z-index:3;pointer-events:none;box-shadow:inset 0 0 180px rgba(0,0,0,.72)}.noise{z-index:4;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.wrap{position:relative;z-index:5;width:min(1240px,calc(100% - 32px));margin:auto;min-height:100vh;display:flex;flex-direction:column}.top{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--l);gap:16px}.brand{display:flex;align-items:center;gap:14px}.mark{width:30px;height:30px;border:1px solid var(--ll);transform:rotate(45deg);position:relative}.mark:before,.mark:after{content:"";position:absolute;background:var(--a);box-shadow:0 0 12px rgba(216,255,85,.7)}.mark:before{width:2px;height:16px;left:13px;top:6px}.mark:after{height:2px;width:16px;left:6px;top:13px}.brand b{display:block;font:900 24px/1 'Barlow Condensed',sans-serif;letter-spacing:.07em}.brand span{display:block;margin-top:4px;color:var(--m);font-size:9px;letter-spacing:.18em;text-transform:uppercase}.right{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--m);text-transform:uppercase}.clock{color:var(--t);font-variant-numeric:tabular-nums}.lang{appearance:none;border:1px solid var(--l);background:#080a07bb;color:var(--t);padding:8px 24px 8px 8px;font:700 10px Inter;letter-spacing:.08em;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,#9ca895 50%),linear-gradient(135deg,#9ca895 50%,transparent 50%);background-position:calc(100% - 10px) 50%,calc(100% - 6px) 50%;background-size:4px 4px;background-repeat:no-repeat}.main{flex:1;display:flex;align-items:center;padding:48px 0 56px}.panel{max-width:820px}.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px;color:var(--a);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.eyebrow:before{content:"";width:40px;height:1px;background:var(--a)}h1{margin:0;font:900 clamp(68px,11vw,160px)/.74 'Barlow Condensed',sans-serif;letter-spacing:-.03em;text-transform:uppercase;text-shadow:0 14px 44px rgba(0,0,0,.45)}h1 span{display:block;color:transparent;-webkit-text-stroke:1.4px rgba(238,242,231,.78);opacity:.62}.lead{max-width:690px;margin:26px 0 0;color:#c8d0c1;font-size:clamp(15px,1.2vw,19px);line-height:1.65}.lead b{color:#fff}.count{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));max-width:840px;margin-top:34px;border-top:1px solid var(--ll);border-bottom:1px solid var(--ll);background:rgba(8,10,7,.34);backdrop-filter:blur(5px)}.u{padding:20px 22px 16px;border-right:1px solid var(--l)}.u:last-child{border-right:0}.n{display:block;font:800 clamp(48px,5vw,72px)/.8 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums}.lab{display:block;margin-top:14px;color:var(--m);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;color:#c1cab9;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.meta span:before{content:"";display:inline-block;width:5px;height:5px;margin-right:9px;background:var(--a);transform:rotate(45deg)}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{min-height:54px;padding:0 20px;border:1px solid var(--l);display:inline-flex;align-items:center;justify-content:center;background:#080a07b7;color:#fff;font:800 11px Inter;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;cursor:pointer}.btn.primary{background:var(--a);color:#0a0c08;border-color:var(--a)}.live{display:none;margin-top:30px;padding:22px;border:1px solid rgba(216,255,85,.42);background:rgba(167,210,47,.09)}.live strong{display:block;color:var(--a);font:900 34px/1 'Barlow Condensed';letter-spacing:.05em;text-transform:uppercase}.live p{margin:10px 0 0;color:#cbd4c3;font-size:13px}.dots{position:fixed;right:18px;top:50%;z-index:6;display:grid;gap:8px}.dots button{width:6px;height:20px;border:0;background:rgba(255,255,255,.28);cursor:pointer}.dots button.on{height:34px;background:var(--a);box-shadow:0 0 10px rgba(216,255,85,.5)}.foot{height:62px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--l);color:#879081;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}@media(max-width:760px){.wrap{width:calc(100% - 22px)}.top{height:72px}.brand span,.zone,.foot span:nth-child(2){display:none}.main{padding:44px 0 48px}h1{font-size:clamp(64px,23vw,102px)}.count{grid-template-columns:repeat(2,1fr)}.u{border-bottom:1px solid var(--l)}.u:nth-child(2){border-right:0}.u:nth-child(3),.u:nth-child(4){border-bottom:0}.dots{display:none}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}</style></head><body><div class="bg"><div class="shot on" style="background-image:url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/extras/0a0588bd799ec87d4186ed646bed1c54.avif?t=1788683537')"></div><div class="shot" style="background-image:url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/extras/62b9f9e5a2a859286bbca3b57f8c5f96.avif?t=1788683537')"></div><div class="shot" style="background-image:url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/extras/2f707f71abedf0a7a62b2f84f56e9eca.avif?t=1788683537')"></div><div class="shot" style="background-image:url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/extras/8b498b3a421dcf436431f348019c0d36.avif?t=1788683537')"></div></div><div class="grid"></div><div class="scan"></div><div class="vig"></div><div class="noise"></div><div class="dots" id="dots"></div><div class="wrap"><header class="top"><div class="brand"><div class="mark"></div><div><b>WARDOGS</b><span id="sub">Deployment countdown</span></div></div><div class="right"><span class="zone" id="zone">Local</span><span class="clock" id="clock">--:--:--</span><select id="lang" class="lang" aria-label="Language"><option value="auto">AUTO</option><option value="fr">FR</option><option value="en">EN</option></select></div></header><main class="main"><section class="panel"><div class="eyebrow" id="eye">Early Access · PC / Steam</div><h1 id="title">Time to <span>deploy.</span></h1><p class="lead" id="lead"></p><div class="count" id="count"><div class="u"><span class="n" id="days">00</span><span class="lab" id="ld">Days</span></div><div class="u"><span class="n" id="hours">00</span><span class="lab" id="lh">Hours</span></div><div class="u"><span class="n" id="minutes">00</span><span class="lab" id="lm">Minutes</span></div><div class="u"><span class="n" id="seconds">00</span><span class="lab" id="ls">Seconds</span></div></div><div class="meta"><span id="date"></span><span id="time"></span><span>Steam Early Access</span></div><div class="cta"><a class="btn primary" href="https://store.steampowered.com/app/1867240/WARDOGS/" target="_blank" rel="noopener" id="steamBtn">Open on Steam ↗</a><button class="btn" id="fs">Fullscreen</button></div><div class="live" id="live"><strong id="liveTitle">Deployment live</strong><p id="liveText">WARDOGS is now available in Early Access. The countdown is over.</p></div></section></main><footer class="foot"><span id="fan">NITARII // WARDOGS</span><span id="rights">WARDOGS RELEASE COUNTDOWN</span><span id="signal">Signal // Online</span></footer></div><script>(()=>{const launch=new Date('2026-09-10T16:00:00Z');const target=launch.getTime();const $=id=>document.getElementById(id);const tr={fr:{sub:'Compte à rebours du déploiement',eye:'Accès anticipé · PC / Steam',title:'Prêt au',out:'déploiement.',a:'Le champ de bataille ouvre le',b:'Prépare ton équipement : le déploiement WARDOGS approche.',d:'Jours',h:'Heures',m:'Minutes',s:'Secondes',steam:'Ouvrir sur Steam ↗',live:'Déploiement lancé',liveText:'WARDOGS est maintenant disponible en accès anticipé. Le compte à rebours est terminé.',signal:'Signal // En ligne',zone:'Local',fs:'Plein écran'},en:{sub:'Deployment countdown',eye:'Early Access · PC / Steam',title:'Time to',out:'deploy.',a:'The battlefield opens on',b:'Prepare your gear: WARDOGS deployment is approaching.',d:'Days',h:'Hours',m:'Minutes',s:'Seconds',steam:'Open on Steam ↗',live:'Deployment live',liveText:'WARDOGS is now available in Early Access. The countdown is over.',signal:'Signal // Online',zone:'Local',fs:'Fullscreen'}};const browserLocale=(navigator.languages&&navigator.languages[0])||navigator.language||'en-US';const autoLang=browserLocale.toLowerCase().startsWith('fr')?'fr':'en';const sel=$('lang');let lang=localStorage.getItem('wd-lang')||'auto';if(!['auto','fr','en'].includes(lang))lang='auto';sel.value=lang;const currentLang=()=>lang==='auto'?autoLang:lang;const locale=()=>currentLang()==='fr'?'fr-FR':'en-US';function launchParts(){return{date:new Intl.DateTimeFormat(locale(),{day:'numeric',month:'long',year:'numeric'}).format(launch),time:new Intl.DateTimeFormat(locale(),{hour:'2-digit',minute:'2-digit',timeZoneName:'short'}).format(launch)}}function applyText(){const t=tr[currentLang()];const p=launchParts();const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'UTC';document.documentElement.lang=currentLang();document.title='WARDOGS — '+t.sub;$('sub').textContent=t.sub;$('eye').textContent=t.eye;$('title').innerHTML=t.title+' <span>'+t.out+'</span>';$('lead').innerHTML=t.a+' <b>'+p.date+' · '+p.time+'</b>. '+t.b;$('ld').textContent=t.d;$('lh').textContent=t.h;$('lm').textContent=t.m;$('ls').textContent=t.s;$('date').textContent=p.date;$('time').textContent=p.time;$('steamBtn').textContent=t.steam;$('liveTitle').textContent=t.live;$('liveText').textContent=t.liveText;$('signal').textContent=t.signal;$('zone').textContent=t.zone+' / '+zone;$('fs').textContent=t.fs}sel.onchange=()=>{lang=sel.value;if(lang==='auto')localStorage.removeItem('wd-lang');else localStorage.setItem('wd-lang',lang);applyText();updateClock()};function setValue(id,v){$(id).textContent=String(v).padStart(2,'0')}function tick(){let d=target-Date.now();if(d<=0){['days','hours','minutes','seconds'].forEach(id=>setValue(id,0));$('count').style.display='none';$('live').style.display='block';return}const dd=Math.floor(d/86400000);d%=86400000;const hh=Math.floor(d/3600000);d%=3600000;const mm=Math.floor(d/60000);d%=60000;const ss=Math.floor(d/1000);setValue('days',dd);setValue('hours',hh);setValue('minutes',mm);setValue('seconds',ss)}function updateClock(){$('clock').textContent=new Intl.DateTimeFormat(locale(),{hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date())}applyText();tick();updateClock();setInterval(tick,250);setInterval(updateClock,1000);const shots=[...document.querySelectorAll('.shot')];const dots=$('dots');let i=0,slider;shots.forEach((_,x)=>{const b=document.createElement('button');if(!x)b.className='on';b.onclick=()=>{show(x);start()};dots.appendChild(b)});function show(x){shots[i].classList.remove('on');dots.children[i].classList.remove('on');i=x;shots[i].classList.add('on');dots.children[i].classList.add('on')}function start(){clearInterval(slider);slider=setInterval(()=>show((i+1)%shots.length),9000)}start();$('fs').onclick=async()=>{try{document.fullscreenElement?await document.exitFullscreen():await document.documentElement.requestFullscreen()}catch(e){}}})();</script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b08">
+  <meta name="description" content="WARDOGS release countdown.">
+  <title>WARDOGS — Countdown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --a:#d8ff55;
+      --t:#eef2e7;
+      --m:#9ca895;
+      --l:rgba(220,235,200,.18);
+      --ll:rgba(220,235,200,.34);
+      --bg:#090b08;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--t);font-family:Inter,system-ui,sans-serif}
+    body{overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+
+    .bg,.grid,.scan,.vig,.noise{position:fixed;inset:0}
+    .bg{z-index:0;background:#11150f;overflow:hidden}
+    .shot{position:absolute;inset:-2%;background-size:cover;background-position:center;opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 8s ease;filter:saturate(.82) contrast(1.06) brightness(.55)}
+    .shot.on{opacity:1;transform:scale(1.01)}
+    .bg:after{content:"";position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(8,10,7,.97),rgba(8,10,7,.78) 35%,rgba(8,10,7,.38) 70%,rgba(8,10,7,.62)),
+      linear-gradient(180deg,rgba(8,10,7,.10),rgba(8,10,7,.18) 48%,rgba(8,10,7,.97))}
+    .grid{z-index:1;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(220,240,190,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(220,240,190,.08) 1px,transparent 1px);background-size:48px 48px}
+    .scan{z-index:2;pointer-events:none;opacity:.1;background:repeating-linear-gradient(180deg,transparent 0 3px,rgba(0,0,0,.2) 4px)}
+    .vig{z-index:3;pointer-events:none;box-shadow:inset 0 0 180px rgba(0,0,0,.72)}
+    .noise{z-index:4;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+    .wrap{position:relative;z-index:5;width:min(1240px,calc(100% - 32px));margin:auto;min-height:100vh;display:flex;flex-direction:column}
+    .top{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--l);gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .mark{width:30px;height:30px;border:1px solid var(--ll);transform:rotate(45deg);position:relative}
+    .mark:before,.mark:after{content:"";position:absolute;background:var(--a);box-shadow:0 0 12px rgba(216,255,85,.7)}
+    .mark:before{width:2px;height:16px;left:13px;top:6px}
+    .mark:after{height:2px;width:16px;left:6px;top:13px}
+    .brand b{display:block;font:900 24px/1 'Barlow Condensed',sans-serif;letter-spacing:.07em}
+    .brand span{display:block;margin-top:4px;color:var(--m);font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+    .right{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--m);text-transform:uppercase}
+    .clock{color:var(--t);font-variant-numeric:tabular-nums}
+    .lang{appearance:none;border:1px solid var(--l);background:#080a07bb;color:var(--t);padding:8px 24px 8px 8px;font:700 10px Inter;letter-spacing:.08em;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,#9ca895 50%),linear-gradient(135deg,#9ca895 50%,transparent 50%);background-position:calc(100% - 10px) 50%,calc(100% - 6px) 50%;background-size:4px 4px;background-repeat:no-repeat}
+
+    .main{flex:1;display:flex;align-items:center;padding:48px 0 56px}
+    .panel{max-width:820px}
+    .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px;color:var(--a);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:40px;height:1px;background:var(--a)}
+    h1{margin:0;font:900 clamp(68px,11vw,160px)/.74 'Barlow Condensed',sans-serif;letter-spacing:-.03em;text-transform:uppercase;text-shadow:0 14px 44px rgba(0,0,0,.45)}
+    h1 span{display:block;color:transparent;-webkit-text-stroke:1.4px rgba(238,242,231,.78);opacity:.62}
+    .lead{max-width:690px;margin:26px 0 0;color:#c8d0c1;font-size:clamp(15px,1.2vw,19px);line-height:1.65}
+    .lead b{color:#fff}
+
+    .count{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));max-width:840px;margin-top:34px;border-top:1px solid var(--ll);border-bottom:1px solid var(--ll);background:rgba(8,10,7,.34);backdrop-filter:blur(5px)}
+    .u{padding:20px 22px 16px;border-right:1px solid var(--l)}
+    .u:last-child{border-right:0}
+    .n{display:block;font:800 clamp(48px,5vw,72px)/.8 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums}
+    .lab{display:block;margin-top:14px;color:var(--m);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+
+    .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;color:#c1cab9;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .meta span:before{content:"";display:inline-block;width:5px;height:5px;margin-right:9px;background:var(--a);transform:rotate(45deg)}
+
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{min-height:54px;padding:0 20px;border:1px solid var(--l);display:inline-flex;align-items:center;justify-content:center;background:#080a07b7;color:#fff;font:800 11px Inter;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+    .btn.primary{background:var(--a);color:#0a0c08;border-color:var(--a)}
+
+    .live{display:none;margin-top:30px;padding:22px;border:1px solid rgba(216,255,85,.42);background:rgba(167,210,47,.09)}
+    .live strong{display:block;color:var(--a);font:900 34px/1 'Barlow Condensed';letter-spacing:.05em;text-transform:uppercase}
+    .live p{margin:10px 0 0;color:#cbd4c3;font-size:13px}
+
+    .dots{position:fixed;right:18px;top:50%;z-index:6;display:grid;gap:8px}
+    .dots button{width:6px;height:20px;border:0;background:rgba(255,255,255,.28);cursor:pointer}
+    .dots button.on{height:34px;background:var(--a);box-shadow:0 0 10px rgba(216,255,85,.5)}
+
+    .foot{height:62px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--l);color:#879081;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+
+    @media(max-width:760px){
+      .wrap{width:calc(100% - 22px)}
+      .top{height:72px}
+      .brand span,.zone,.foot span:nth-child(2){display:none}
+      .main{padding:44px 0 48px}
+      h1{font-size:clamp(64px,23vw,102px)}
+      .count{grid-template-columns:repeat(2,1fr)}
+      .u{border-bottom:1px solid var(--l)}
+      .u:nth-child(2){border-right:0}
+      .u:nth-child(3),.u:nth-child(4){border-bottom:0}
+      .dots{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="shot on" style="background-image:url('assets/wardogs-bg-01.png')"></div>
+    <div class="shot" style="background-image:url('assets/wardogs-bg-02.png')"></div>
+    <div class="shot" style="background-image:url('assets/wardogs-bg-03.png')"></div>
+    <div class="shot" style="background-image:url('assets/wardogs-bg-04.png')"></div>
+  </div>
+  <div class="grid"></div>
+  <div class="scan"></div>
+  <div class="vig"></div>
+  <div class="noise"></div>
+  <div class="dots" id="dots"></div>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="mark"></div>
+        <div><b>WARDOGS</b><span id="sub">Deployment countdown</span></div>
+      </div>
+      <div class="right">
+        <span class="zone" id="zone">Local</span>
+        <span class="clock" id="clock">--:--:--</span>
+        <select id="lang" class="lang" aria-label="Language">
+          <option value="auto">AUTO</option>
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="panel">
+        <div class="eyebrow" id="eye">Early Access · PC / Steam</div>
+        <h1 id="title">Time to <span>deploy.</span></h1>
+        <p class="lead" id="lead"></p>
+
+        <div class="count" id="count">
+          <div class="u"><span class="n" id="days">00</span><span class="lab" id="ld">Days</span></div>
+          <div class="u"><span class="n" id="hours">00</span><span class="lab" id="lh">Hours</span></div>
+          <div class="u"><span class="n" id="minutes">00</span><span class="lab" id="lm">Minutes</span></div>
+          <div class="u"><span class="n" id="seconds">00</span><span class="lab" id="ls">Seconds</span></div>
+        </div>
+
+        <div class="meta">
+          <span id="date"></span>
+          <span id="time"></span>
+          <span>Steam Early Access</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="https://store.steampowered.com/app/1867240/WARDOGS/" target="_blank" rel="noopener" id="steamBtn">Open on Steam ↗</a>
+          <button class="btn" id="fs">Fullscreen</button>
+        </div>
+
+        <div class="live" id="live">
+          <strong id="liveTitle">Deployment live</strong>
+          <p id="liveText">WARDOGS is now available in Early Access. The countdown is over.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span id="fan">Unofficial fan countdown</span>
+      <span id="rights">Backgrounds and visuals © their respective owners</span>
+      <span id="signal">Signal // Online</span>
+    </footer>
+  </div>
+
+  <script>
+    (()=>{
+      const launch=new Date('2026-09-10T16:00:00Z');
+      const target=launch.getTime();
+      const $=id=>document.getElementById(id);
+      const tr={
+        fr:{
+          sub:'Compte à rebours du déploiement',
+          eye:'Accès anticipé · PC / Steam',
+          title:'Prêt au',
+          out:'déploiement.',
+          a:'Le champ de bataille ouvre le',
+          b:'Prépare ton équipement : le déploiement WARDOGS approche.',
+          d:'Jours',h:'Heures',m:'Minutes',s:'Secondes',
+          steam:'Ouvrir sur Steam ↗',
+          live:'Déploiement lancé',
+          liveText:'WARDOGS est maintenant disponible en accès anticipé. Le compte à rebours est terminé.',
+          fan:'Compte à rebours non officiel',
+          rights:'Fonds et visuels © leurs ayants droit respectifs',
+          signal:'Signal // En ligne',
+          zone:'Local',
+          fs:'Plein écran'
+        },
+        en:{
+          sub:'Deployment countdown',
+          eye:'Early Access · PC / Steam',
+          title:'Time to',
+          out:'deploy.',
+          a:'The battlefield opens on',
+          b:'Prepare your gear: WARDOGS deployment is approaching.',
+          d:'Days',h:'Hours',m:'Minutes',s:'Seconds',
+          steam:'Open on Steam ↗',
+          live:'Deployment live',
+          liveText:'WARDOGS is now available in Early Access. The countdown is over.',
+          fan:'Unofficial fan countdown',
+          rights:'Backgrounds and visuals © their respective owners',
+          signal:'Signal // Online',
+          zone:'Local',
+          fs:'Fullscreen'
+        }
+      };
+
+      const browserLocale=(navigator.languages&&navigator.languages[0])||navigator.language||'en-US';
+      const autoLang=browserLocale.toLowerCase().startsWith('fr')?'fr':'en';
+      const sel=$('lang');
+      let lang=localStorage.getItem('wd-lang')||'auto';
+      if(!['auto','fr','en'].includes(lang)) lang='auto';
+      sel.value=lang;
+
+      const currentLang=()=>lang==='auto'?autoLang:lang;
+      const locale=()=>currentLang()==='fr'?'fr-FR':'en-US';
+
+      function launchParts(){
+        return {
+          date:new Intl.DateTimeFormat(locale(),{day:'numeric',month:'long',year:'numeric'}).format(launch),
+          time:new Intl.DateTimeFormat(locale(),{hour:'2-digit',minute:'2-digit',timeZoneName:'short'}).format(launch)
+        };
+      }
+
+      function applyText(){
+        const t=tr[currentLang()];
+        const p=launchParts();
+        const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'UTC';
+        document.documentElement.lang=currentLang();
+        document.title='WARDOGS — '+t.sub;
+        $('sub').textContent=t.sub;
+        $('eye').textContent=t.eye;
+        $('title').innerHTML=t.title+' <span>'+t.out+'</span>';
+        $('lead').innerHTML=t.a+' <b>'+p.date+' · '+p.time+'</b>. '+t.b;
+        $('ld').textContent=t.d;
+        $('lh').textContent=t.h;
+        $('lm').textContent=t.m;
+        $('ls').textContent=t.s;
+        $('date').textContent=p.date;
+        $('time').textContent=p.time;
+        $('steamBtn').textContent=t.steam;
+        $('liveTitle').textContent=t.live;
+        $('liveText').textContent=t.liveText;
+        $('fan').textContent=t.fan;
+        $('rights').textContent=t.rights;
+        $('signal').textContent=t.signal;
+        $('zone').textContent=t.zone+' / '+zone;
+        $('fs').textContent=t.fs;
+      }
+
+      sel.onchange=()=>{
+        lang=sel.value;
+        if(lang==='auto') localStorage.removeItem('wd-lang');
+        else localStorage.setItem('wd-lang',lang);
+        applyText();
+        updateClock();
+      };
+
+      function setValue(id,v){ $(id).textContent=String(v).padStart(2,'0'); }
+      function tick(){
+        let d=target-Date.now();
+        if(d<=0){
+          ['days','hours','minutes','seconds'].forEach(id=>setValue(id,0));
+          $('count').style.display='none';
+          $('live').style.display='block';
+          return;
+        }
+        const dd=Math.floor(d/86400000); d%=86400000;
+        const hh=Math.floor(d/3600000); d%=3600000;
+        const mm=Math.floor(d/60000); d%=60000;
+        const ss=Math.floor(d/1000);
+        setValue('days',dd); setValue('hours',hh); setValue('minutes',mm); setValue('seconds',ss);
+      }
+      function updateClock(){ $('clock').textContent=new Intl.DateTimeFormat(locale(),{hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date()); }
+
+      applyText();
+      tick();
+      updateClock();
+      setInterval(tick,250);
+      setInterval(updateClock,1000);
+
+      const shots=[...document.querySelectorAll('.shot')];
+      const dots=$('dots');
+      let i=0,slider;
+      shots.forEach((_,x)=>{
+        const b=document.createElement('button');
+        if(!x) b.className='on';
+        b.onclick=()=>{show(x);start();};
+        dots.appendChild(b);
+      });
+      function show(x){
+        shots[i].classList.remove('on');
+        dots.children[i].classList.remove('on');
+        i=x;
+        shots[i].classList.add('on');
+        dots.children[i].classList.add('on');
+      }
+      function start(){ clearInterval(slider); slider=setInterval(()=>show((i+1)%shots.length),9000); }
+      start();
+
+      $('fs').onclick=async()=>{
+        try{document.fullscreenElement?await document.exitFullscreen():await document.documentElement.requestFullscreen()}catch(e){}
+      };
+    })();
+  </script>
+</body>
+</html>
